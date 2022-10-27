@@ -36,6 +36,11 @@ a {
   background-color: black;
   padding: 68px 80px;
 }
+@media only screen and (max-width: 1200px) {
+  #main {
+    padding: 8px 8px;
+  }
+}
 
 #sec1 {
   display: flex;
@@ -69,6 +74,12 @@ a {
     flex-direction: column;
   }
 }
+@media only screen and (max-width: 480px) {
+  #sec2 {
+    align-content: center;
+    flex-wrap: wrap;
+  }
+}
 @media (max-width: 700px) {
   #sec2pay {
     display: grid;
@@ -81,27 +92,27 @@ a {
 }
 @media (max-width: 1200px) {
   #sec2o2 {
-    width: 650px;
-    margin-top: 20px;
-  }
-}
-@media (max-width: 810px) {
-  #sec2o2 {
-    width: 310px;
-    margin-top: 20px;
-  }
-}
-@media (max-width: 410px) {
-  #sec2o2 {
-    width: 230px;
+    width: auto;
     margin-top: 20px;
   }
 }
 #sec2img {
   border: 1px solid gray;
   border-radius: 14px;
-  height: 704px;
+  height:704px ;
   width: 534px;
+}
+@media (max-width: 1200px) {
+  #sec2img {
+    height: auto;
+    width:auto ;
+  }
+}
+@media (max-width: 480px) {
+  #sec2img {
+    height: 40vh;
+    width: 40vh;
+  }
 }
 #sec2o2head {
   font-family: "Fjalla One", sans-serif;
@@ -156,20 +167,8 @@ a {
 
 @media (max-width: 1200px) {
   #sec2o2box {
-    width: 650px;
-    height: 700px;
-  }
-}
-@media (max-width: 810px) {
-  #sec2o2box {
-    width: 310px;
-    height: 800px;
-  }
-}
-@media (max-width: 440px) {
-  #sec2o2box {
-    width: 230px;
-    height: 920px;
+    width: auto;
+    height: auto;
   }
 }
 #s22bxdvtb{
@@ -198,13 +197,6 @@ a {
 #darkPrice {
   font-size: 35px;
   font-family: "Fjalla One", sans-serif;
-}
-@media (max-width: 1200px) {
-  #darkPrice,
-  .sec2o2smP2 {
-    display: flex;
-    flex-direction: column;
-  }
 }
 
 .paymentLG {
@@ -306,7 +298,7 @@ a {
 #sec8body::-webkit-scrollbar{
   display: none;
 }
-@media (max-width: 1100px) {
+@media (max-width : 900px) {
   #sec8body {
     flex-direction: column;
   }
@@ -383,6 +375,11 @@ a {
 }
 .arowLR:hover {
   background-color: rgba(255, 255, 255, 0.575);
+}
+@media(max-width:900px){
+  .arowLR {
+    display: none;
+  }
 }
 #sec8H {
   margin-right: 100px;
